@@ -10,6 +10,7 @@
      "slim/slim": "2.3.*",
      "twig/twig": "1.13.*",
      "slim/views": "0.1.*",
+     "php-activerecord/php-activerecord" : "1.1.*",
      "monolog/monolog": "1.6.*",
      "flynsarmy/slim-monolog": "dev-master"
     },

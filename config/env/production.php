@@ -1,6 +1,6 @@
 <?php
 
-define('DB_NAME', 'wordpress_template');
+define('DB_NAME', 'ydliving');
 /** MySQL database username */
 define('DB_USER', 'root');
 

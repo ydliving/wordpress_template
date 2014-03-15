@@ -3,7 +3,7 @@ require dirname(dirname(__DIR__)) . '/config/wordpress.php';
 
 $app= new \Slim\Slim([
 	'log.enabled' => true,
-	'log.writer' => $logger,
+//	'log.writer' => $logger,
 	'debug' => true,
   'templates.path' => './views'
 	]);
@@ -29,10 +29,14 @@ $app->get("(/)", function() use($app){
 	// if ( is_wp_error($user) )
 	// 	echo $user->get_error_message();
 
-	if(!is_user_logged_in()) {
-		wp_redirect(wp_login_url());
-		exit;
-	}
+//	if(!is_user_logged_in()) {
+//		wp_redirect(wp_login_url());
+//		exit;
+//	}
+
+//    $user =\app\models\User.find(1);
+    $user = \app\models\User::find(1);
+
 	$user = wp_get_current_user();
 	/* var_dump($user); */
 	$userid = get_current_user_id();

@@ -1,0 +1,32 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ydliving
+  pool: 5
+  username: root
+  password:
+  host: 127.0.0.1
+  # socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ydliving
+  pool: 5
+  username: root
+  password:
+  host: 127.0.0.1
+
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ydliving
+  pool: 5
+  username: root
+  password:
+  host: 127.0.0.1
+
+
